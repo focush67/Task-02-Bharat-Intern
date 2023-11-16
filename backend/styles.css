@@ -1,0 +1,26 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all 0.25s;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: aqua;
+}
+
+#blogs-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    width: fit-content;
+    background-color: rgb(235, 228, 228);
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Blog Upload</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Blog Upload</h2>
+        <form id="userForm" onsubmit="event.preventDefault() ; submitBlog()">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" accept="image/*">
+
+            <button type="submit">Upload Blog</button>
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
