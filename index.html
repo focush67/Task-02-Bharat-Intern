@@ -10,6 +10,9 @@
 
     <div class="container">
         <h2>Blog Upload</h2>
+        <div style="display: flex;justify-content: center;">
+            <button onclick="seeAllBlogs()">See all blogs</button>
+        </div>
         <form id="userForm" onsubmit="event.preventDefault() ; submitBlog()">
             <label for="title">Title:</label>
             <input type="text" id="title" name="title" required>
@@ -19,9 +22,6 @@
 
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
-
-            <label for="image">Image:</label>
-            <input type="file" id="image" name="image" accept="image/*">
 
             <button type="submit">Upload Blog</button>
         </form>

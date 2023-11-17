@@ -43,3 +43,9 @@ async function displayBlogs() {
 }
 
 window.addEventListener("DOMContentLoaded", displayBlogs);
+
+
+
+function migrateToNew(){
+    window.location.href = "http://127.0.0.1:5501";
+}
